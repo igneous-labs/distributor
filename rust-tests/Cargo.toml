@@ -1,0 +1,19 @@
+[package]
+name = "rust-tests"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib", "lib"]
+
+[dependencies]
+litesvm = "0.2.0"
+solana-sdk = "1.18.26"
+solana-program = "1.18.26"
+solana-client = "1.18.26"
+merkle-distributor = { path = "../programs/merkle-distributor"}
+anchor-lang = { version = "0.30.1"}
+anchor-spl= "0.30.1"
+spl-token-2022 = "3.0.4"
+mpl-token-metadata = "4.1.2"
+tokio = { version = "1.40.0", features = ["full"] }
